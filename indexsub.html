@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Subscription Form | </title>--->
+    <link rel="stylesheet" href="stylesub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script>
+         async function subscribe() {
+            console.log('easjhjed')
+         const email = document.getElementsByName("email")[0].value;
+          fetch(`http://localhost:8000/api/subscribe/${email}`)
+      }
+     </script>
+   </head>
+<body>
+  <div class="wrapper">
+    <div class="top">
+      <i class="fas fa-envelope-open-text"></i>
+    </div>
+    <div class="bottom">
+      <div class="info">
+        Subscribe to our channel and<br>get the latest updates
+      </div>
+        <form action="javascript:void(0);" onsubmit="subscribe()">
+          <input type="text" placeholder="Enter your email"  name="email">
+        
+          <input type="submit" value="Subscribe">
+    </form>
+      <div class="footer">
+        Don't worry, we don't spam
+      </div>
+    </div>
+  </div>
+</body>
+</html>

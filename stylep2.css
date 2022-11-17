@@ -1,0 +1,90 @@
+@import url(OpenSans-Bold.ttf);
+
+
+:root{
+    --font-family-opensans:"opensans";
+    --stdmargin:3rem
+    
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+
+ body{
+    background-color: #1C5D87;
+ }
+
+ #loginbutton{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 1164px;
+    top: 24px;
+    border-radius: 50px;
+    background: #FD9E47;
+    
+}
+
+ #loginbutton{
+    transition-duration: 0.4s;
+  }
+
+ #loginbutton:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+
+#signupbutton{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 1280.2px;
+    top: 24px;
+    border-radius: 50px;
+    background: #1E62E8;
+    
+
+}
+
+#signupbutton{
+    transition-duration: 0.4s;
+  }
+
+ #signupbutton:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+
+
+
+#homebutton{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 27px;
+    top: 23px;
+    background-color: red;
+    border-radius: 35px;
+    text-align: center;
+
+}
+
+#bookbutton{
+    position: absolute;
+    width: 144px;
+    height: 40px;
+    left: 1028px;
+    top: 207px;
+    background-color: orange;
+    border-radius: 35px;
+    text-align: center;
+    
+}

@@ -1,0 +1,324 @@
+@import url(OpenSans-Bold.ttf);
+
+
+:root{
+    --font-family-opensans:"opensans";
+    --stdmargin:3rem
+    
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+
+ body{
+    background-color: #1C5D87;
+ }
+
+
+
+
+
+ #landingpage{
+    margin: 0 var(--stdmargin);
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 50px;
+    top: 0px; 
+    right: 50px;
+    bottom: 50px;
+    grid-template-columns: repeat(12,1fr);
+    column-gap: 10px;
+    background-color: #1C5D87;
+    background-image:url(trainimg_edited.jpg); height: 864px; width: 990px; background-repeat: no-repeat;  background-size: cover; margin: 0 ;left: 0px;top: 0px;
+}
+
+#herosection{
+    margin: auto 0;
+    grid-column: 2/-1;
+
+    
+}
+
+#herotext{
+    position: absolute;
+    width: 1212px;
+    height: 184px;
+    left: 300px;
+    top: 61px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 76.8px;
+    line-height: 105px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+     }
+
+  #herotext1{
+    position: absolute;
+    width: 570px;
+    height: 184px;
+    left: 750px;
+    top: 61px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 76.8px;
+    line-height: 105px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    background: linear-gradient(270.05deg, #E79595 27.45%, #00FF94 52.85%, #FF31DE 77.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    animation: animated_herotext1 5s ease-in-out infinite;
+	-moz-animation:animated_herotext1 5s ease-in-out infinite;
+	-webkit-animation:animated_herotext1 5s ease-in-out infinite;
+
+
+  }
+
+
+  @keyframes animated_herotext1  {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+
+
+  
+
+    
+
+    #ctahelper{
+        position: absolute;
+        width: 502.53px;
+        height: 58.4px;
+        left: 900px;
+        top: 418px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 40;
+        font-size: 21.6px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #07F5BC;
+
+    }
+
+
+    #frominput{
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        left: 921.19px;
+        top: 476.4px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+
+    #toinput{
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        left: 921.19px;
+        top: 558.8px;
+        border-radius: 50px;
+        text-align: center;
+
+    }
+
+ 
+
+    #searchbutton{
+        position: absolute;
+        width: 171.88px;
+        height: 52.8px;
+        left: 990px;
+        top: 633.2px;
+        border-radius: 50px;
+        background-color: crimson;
+        
+
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+
+    }
+
+    #searchbutton:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+
+   #searchbutton:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+            
+    
+
+    
+
+
+
+#about{
+    position: absolute;
+    left: 2.08%;
+    right: 90.89%;
+    top: 1.2%;
+    bottom: 94.07%;
+    color: #FD9E47;
+
+}
+
+#contactus{
+    position: absolute;
+    left: 9.14%;
+    right: 80.46%;
+    top: 1.19%;
+    bottom: 94.04%;
+    color: #FD9E47;
+
+}
+
+#loginbutton{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 1164px;
+    top: 24px;
+    border-radius: 50px;
+    background: #FD9E47;
+    
+}
+
+ #loginbutton{
+    transition-duration: 0.4s;
+  }
+
+ #loginbutton:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+
+#signupbutton{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 1280.2px;
+    top: 24px;
+    border-radius: 50px;
+    background: #1E62E8;
+    
+
+}
+
+#signupbutton{
+    transition-duration: 0.4s;
+  }
+
+ #signupbutton:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+
+ #date{
+    position: absolute;
+width: 67px;
+height: 55px;
+left: 1250px;
+top: 473px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 19.2px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(0, 0, 0, 0.41);
+
+border-radius: 35px;
+ }
+
+
+ #seats{
+    position: absolute;
+    position: absolute;
+    width: 67
+    px;
+    height: 55px;
+    left: 1250px;
+    top: 553px;
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.2px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    color: rgba(0, 0, 0, 0.41);
+
+border-radius: 35px;
+ }
+
+ #subscribebutton{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    color: #E79595;
+
+ }
+ #subscribebutton:hover{
+    cursor: pointer;
+ }
+
+ #about:hover{
+    cursor: pointer;
+ }
+
+ #contactus:hover{
+    cursor: pointer;
+ }

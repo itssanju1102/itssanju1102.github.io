@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>project</title>
+    <script>
+     async function Submit() {
+         const from = document.getElementsByName("fromstation")[0].value;
+          //console.log(from)
+         const to = document.getElementsByName("tostation")[0].value;
+          //console.log(to)
+
+          fetch(`http://localhost:8000/${from}/${to}`)
+         .then(r =>  r.json().then(data => ({status: r.status, body: data})))
+         .then(obj =>localStorage.setItem("traindata",JSON.stringify(obj.body)));
+         //  http://localhost:8000/api/subscribe/benaka@gmail.com
+      }
+     
+
+      
+    </script>
+</head>
+<body>
+
+ <!--landing page start-->
+ 
+
+    <div id="landingpage">
+    <div onclick="location.href='indexabout.html'"  id="about"  >about</div>
+     <div  onclick="location.href='indexabout.html'" id="contactus">contact us</div>
+     <div  onclick="location.href='indexsub.html'" id="subscribebutton">newsletter</div>
+
+
+      
+        
+
+        
+        <button onclick="location.href='index2.html'"  type="button"id="loginbutton">login</button>
+        <button  onclick="location.href='index1.html'" type="button" id="signupbutton">signup</button>
+        
+
+     <!--hero section start-->
+      <div id="herosection">
+         <div id="herotext">Ready for an  </div>
+         <div id="herotext1"> adventure? </div>
+
+         
+
+          <div id="ctasection">
+          <div id="ctahelper">Search your train and book a ticket now!</div>
+          <form action="javascript:void(0);"onsubmit="Submit()">
+          <input id="frominput" type="search" placeholder="From station" name="fromstation">
+          <input id="toinput" type="search" placeholder="To station" name="tostation">
+          <button
+          onclick="location.href='indexp2.html'"
+           type="submit"id="searchbutton">Search</button>
+         </form>
+
+         
+
+        
+            <input id="date" type="date" placeholder="date">
+            
+               
+               <select id="seats">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+               </select>
+               
+           
+         
+         
+          </div>
+     </div> 
+     <!--hero section end-->
+
+
+     <div id="sociallinks">
+
+
+     </div> 
+
+     
+
+
+
+
+
+
+
+    </div>
+ <!--landingpage end-->   
+    
+</body>
+</html>

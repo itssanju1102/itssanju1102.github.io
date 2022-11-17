@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylep2.css"/>
+
+
+   
+</head>
+<body >
+   
+    <div id="result">
+
+    </div>
+    <script  defer>
+        var data ;
+            if(localStorage.getItem("traindata")){
+                data=JSON.parse(localStorage.getItem("traindata"))
+            }
+            console.log(data)
+            const list = document.getElementById('result')
+
+           
+      data.forEach(project => {
+        const x = document.createElement("h6")
+        x.setAttribute(
+        'style',
+        'background-color:white ; color: black; width: 150px; height: 150px; position: absolute; width: 905px; height: 55px; left: 400px; top: 200px; font-style: normal; font-weight: 400; font-size: 40px; line-height: 33px; display: flex; align-items: center; color: #000000; border-radius:15px;',
+              )
+    const y = document.createElement("h6")
+    y.setAttribute(
+      'style',
+      'background-color:white ; color: black; width: 150px; height: 150px; position: absolute; width: 110px; height: 55px; left: 250px; top: 200px; font-style: normal; font-weight: 400; font-size: 40px; line-height: 33px; display: flex; align-items: center; color: #000000; border-radius:15px;',
+    )
+  
+const z = document.createElement("h6")
+        z.setAttribute(
+          'style',
+          'background-color: ; color: black; width: 150px; height: 150px; position: absolute; width: 905px; height: 55px; left: 800px; top: 200px; font-style: normal; font-weight: 400; font-size: 40px; line-height: 33px; display: flex; align-items: center; color: #000000; border-radius:15px;',
+
+        )
+
+
+        x.innerHTML = project.train_name ;
+        list.appendChild(x);
+        y.innerHTML = project.train_number;
+        list.appendChild(y);
+        z.innerHTML = project.fair_price;
+        list.appendChild(z);
+      
+    
+
+       
+       
+      })
+        </script>
+
+    <button onclick="location.href='index2.html'"  type="button"id="loginbutton">login</button>
+    <button  onclick="location.href='index1.html'" type="button" id="signupbutton">signup</button>
+    <button onclick="location.href='index.html'"  type="button"id="homebutton">Home</button>
+    <button onclick="location.href='indexpay.html'"  type="button"id="bookbutton">Book now!</button>
+
+      
+</body>
+</html>
