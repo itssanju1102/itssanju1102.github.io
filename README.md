@@ -9,6 +9,11 @@ This website allows users to book train tickets in advance. It provides various 
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+## figma design
+
+https://www.figma.com/file/xKl43I4k10uSfnTLzTa3Za/Untitled?node-id=96%3A91&t=sRfx0otCvFPzv3Pq-1
+
+
 
 ## Tech Stack
 
@@ -22,15 +27,13 @@ This website allows users to book train tickets in advance. It provides various 
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/octokatherine)
+
 
 
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to us at sanjajyjr0123@gamil.com
 
