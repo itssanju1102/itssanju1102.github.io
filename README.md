@@ -7,7 +7,12 @@ This website allows users to book train tickets in advance. It provides various 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![website Screenshot]= https://ibb.co/pv4jSLK
+                        https://ibb.co/Tt0cdjX
+                        https://ibb.co/cNm9DGS
+                        https://ibb.co/f0R7634
+                        https://ibb.co/FJMqmH4
+                        https://ibb.co/M5Mdwzc
 
 ## figma design
 
