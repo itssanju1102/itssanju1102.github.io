@@ -16,7 +16,9 @@ This website allows users to book train tickets in advance. It provides various 
 
 ## figma design
 
+https://www.figma.com/file/xKl43I4k10uSfnTLzTa3Za/Untitled?node-id=0%3A1&t=sRfx0otCvFPzv3Pq-1
 https://www.figma.com/file/xKl43I4k10uSfnTLzTa3Za/Untitled?node-id=96%3A91&t=sRfx0otCvFPzv3Pq-1
+
 
 
 
